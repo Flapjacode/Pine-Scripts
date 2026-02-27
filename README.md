@@ -33,3 +33,17 @@ is < previous trend average the circle will turn red for down trend  and > previ
 When the signal is strong enough an arrow will accompany the circle above or bellow. 
 
 ## Halftrend-EMA-HMA:
+
+// This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © Flapjackcoin
+
+//@version=5
+
+    This indecater has several parts. built ontop "halftrend" by everget, with a changed of amplitude of 6 and deveasion of 3.
+This indicator tracks trend change based on a half average of volume and directions.  There is a trend ribbon that follow 
+and provide a level for resistance and support. There is also an EMA and a hma to provide insight to the main part of the 
+indicater.
+
+    The "halftrend" by everget is a brilliant indicater that tracks half trend averages, along with the trend ribbon support 
+and resistance level, the center line follows the path of an EMA however the crossover of of directions give a change in color 
+and an arrow pointing in direction change.
