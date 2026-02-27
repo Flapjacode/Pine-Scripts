@@ -1,4 +1,33 @@
-   A collection of Pine.log scipts for Trading View indecators ans stratefies ive written. The indicater scripts are 
+   ## A collection of Pine.log scipts for Trading View 
+   
+   Indecators ans stratefies ive written. The indicater scripts are 
  located in the "Pine" folder and thier text counterpart explains what the indicater does and how it works. These descriptions 
  are labeled the same as the Pine script they go to and are contained in the txt foldeer as well as instcrutions on how to add 
  them to Trading View.
+
+ # EMA-Trend-Prediction:
+
+ // This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
+// © Flapjackcoin
+//@version=4
+
+//This Indicator is mainly made up of 3 parts:
+  The arrows and use of half trend ontop of wieghted ema is for a more accurate signal. Youll notice that 
+the arrows often appear oppisite of the direction of the current trend, this is not a mistake the point of 
+this indicator is to look at underlying trend indeacators and predict changes in direction before it shows 
+up in the market visibly.
+
+//Weighted EMA: 
+   This indicator is represented by the EMA defualt length of 14 and color.blue.
+It takes the moving average of the price and volume to represent the median price for a giv en time frame. 
+If candlesticks have crossed above the blue EMA line this is the first indicater of an up trend. 
+Conversly, the same applies if the candlesticks have crossed bellow the blue line.
+The wieghted configuration allows for a more accurate averaging.
+
+//Next, we have the EMA halftrend/Halftrend Prediction: 
+  This is represented as the circles that appear on the chart. The circles are based of the median of the 
+first EMA and a "halftrend" model, meaning  that it also takes into account the average of such as
+trend direction+volume+Ema/price = position of the circles. The circles will defualt set to yellow however the other
+part of this is that this feature also predicts change in trend direction. If trend direction's position 
+is < previous trend average the circle will turn red for down trend  and > previous trend is green for up. 
+When the signal is strong enough an arrow will accompany the circle above or bellow. 
