@@ -1,11 +1,11 @@
-   ## A collection of Pine.log scipts for Trading View 
+   # A collection of Pine.log scipts for Trading View 
    
    Indecators ans stratefies ive written. The indicater scripts are 
  located in the "Pine" folder and thier text counterpart explains what the indicater does and how it works. These descriptions 
  are labeled the same as the Pine script they go to and are contained in the txt foldeer as well as instcrutions on how to add 
  them to Trading View.
 
- # EMA-Trend-Prediction:
+ ## EMA-Trend-Prediction:
 
  // This Pine Script™ code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
 // © Flapjackcoin
@@ -31,3 +31,5 @@ trend direction+volume+Ema/price = position of the circles. The circles will def
 part of this is that this feature also predicts change in trend direction. If trend direction's position 
 is < previous trend average the circle will turn red for down trend  and > previous trend is green for up. 
 When the signal is strong enough an arrow will accompany the circle above or bellow. 
+
+## Halftrend-EMA-HMA:
